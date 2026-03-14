@@ -1,0 +1,49 @@
+body{
+background:#111;
+color:white;
+text-align:center;
+font-family:Arial;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+padding:40px;
+}
+
+.gallery img{
+width:100%;
+cursor:pointer;
+border-radius:10px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+#popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+#popup img{
+max-width:90%;
+max-height:90%;
+}
+
+#popup span{
+position:absolute;
+top:20px;
+right:30px;
+font-size:30px;
+cursor:pointer;
+}
