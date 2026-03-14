@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manish Photography</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Manish Photography</h1>
+
+<div class="gallery">
+
+<img src="photo1.jpg" onclick="openImg(this.src)">
+<img src="photo2.jpg" onclick="openImg(this.src)">
+<img src="photo3.jpg" onclick="openImg(this.src)">
+<img src="photo4.jpg" onclick="openImg(this.src)">
+
+</div>
+
+<div id="popup">
+<span onclick="closeImg()">X</span>
+<img id="popup-img">
+</div>
+
+<script>
+
+function openImg(src){
+document.getElementById("popup").style.display="flex";
+document.getElementById("popup-img").src=src;
+}
+
+function closeImg(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
